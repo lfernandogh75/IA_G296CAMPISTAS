@@ -52,3 +52,5 @@ si sale error
 >>>>>>> 22ec4c6d60dbca23940e7091b2a0f9ca99c9c351
   con env ejecutado aplicamos
   pip install -r requirements.txt
+
+import matplotlib.pyplot as plt #pip install matplotlib
