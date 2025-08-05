@@ -45,3 +45,6 @@ si sale error
  https://github.com/lfernandogh75/IA_G296CAMPISTAS.git
  como desactivar el entorno virtual
   >deactivate
+
+  con env ejecutado aplicamos
+  pip install -r requirements.txt
