@@ -77,3 +77,9 @@ print(df_copy)
 #añadir una columna calculada
 df_copy["años"]=2025 - df_copy["Cumpleaños"]
 print(df_copy)
+#añadir una nueva columna craando un DataFrame nuevo
+df_mod=df_copy.assign(mascotas=[1,3,0,0])
+print(df_mod)
+#Eliminar una columna
+del df_mod["peso"]
+print(df_mod)
