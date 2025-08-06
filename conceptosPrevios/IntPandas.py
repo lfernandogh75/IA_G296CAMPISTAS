@@ -83,3 +83,6 @@ print(df_mod)
 #Eliminar una columna
 del df_mod["peso"]
 print(df_mod)
+
+df_copy["fecha_nacimiento"] = 2025 - df_copy["Cumpleaños"]
+print(df_copy)
