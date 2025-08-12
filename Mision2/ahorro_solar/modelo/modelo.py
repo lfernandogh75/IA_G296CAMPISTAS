@@ -18,3 +18,11 @@ x_encoded=pd.get_dummies(x)
 #print(x_encoded)
 # Dividir datos
 x_train,x_test,y_train,y_test=train_test_split(x_encoded,y,test_size=0.2,random_state=42)
+# Entrenar modelo
+modelo=LinearRegression()
+modelo.fit(x_train,y_train)
+# Guardar modelo
+with open('modelo.pkl','wb') as f:
+    pickle.dump(modelo,f)
+with open('columnas.pkl','wb') as f:
+    pickle.dump(x_encoded.columns.tolist(),f)
