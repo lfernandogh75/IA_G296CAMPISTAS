@@ -88,7 +88,7 @@ correlacion_matriz=df_numerico.corr()
 sns.heatmap(correlacion_matriz, annot=True, cmap='coolwarm')
 plt.title("Correlación entre las características")
 plt.show()
-
+#gfhf
 
 #Diagrama de sectores de fallecidos y supervivientes
 plt.figure()
