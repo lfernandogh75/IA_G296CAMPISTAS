@@ -111,6 +111,24 @@ print('ultimas 10 filas:',titanic.tail(10))
 #pasajero 148
 print(f"el pasajero 148 es {titanic.loc[titanic['PassengerId']==148]['Name']}")
 
+#Mostrar por pantalla las filas pares del dataframe
+print(titanic.iloc[range(0,titanic.shape[0],2)])
+
+#Mostrar los nombres de las personas que iban en primera clase ordenadas alfabeticamente
+print(titanic.loc[titanic['Pclass']==1]['Name'].sort_values())
+
+#Mostrar el % de personas que sobrevivieron y murieron
+print(titanic['Survived'].value_counts()/titanic['Survived'].count()*100)
+
+#Mostrar el % de personas que sobrevivieron en cada clase
+print(titanic.groupby('Pclass')['Survived'].value_counts(normalize=True)*100)
+
+#Mostrar la edad media de las mujeres que viajaban en cada clase
+print(titanic.groupby(['Pclass','Sex'])['Age'].mean().unstack()['female'])
 
 
+#Añadir un nueva columna boleana para ver si el pasajero era menor de edad o no
+titanic['es_menor']=titanic['Age']<18
 
+#Mostrar el % de menores y mayores de edad que sobrevivieron en cada clase
+print(titanic.groupby(['Pclass','es_menor'])['Survived'].value_counts(normalize=True)*100)
