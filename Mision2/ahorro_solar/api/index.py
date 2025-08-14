@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import pickle
 import pandas as pd
 import os
-app = Flask(__name__,template_folder='../templates')
+app = Flask(__name__,template_folder='../templates',static_folder='../static')
 modelo=pickle.load(open(os.path.join(os.path.dirname(__file__),'../modelo/modelo.pkl'),'rb'))
 columnas=pickle.load(open(os.path.join(os.path.dirname(__file__),'../modelo/columnas.pkl'),'rb'))
 
