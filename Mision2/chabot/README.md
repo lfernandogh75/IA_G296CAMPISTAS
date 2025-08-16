@@ -1,3 +1,5 @@
+python 3.13
+
 | Libreria     | comando                  |
 | ------------ | ------------------------ |
 | transformers | pip install transformers |
