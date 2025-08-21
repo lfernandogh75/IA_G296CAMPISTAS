@@ -1,2 +1,4 @@
 env
 env313
+__pycache__
+q_table.json

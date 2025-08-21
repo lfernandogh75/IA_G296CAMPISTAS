@@ -14,6 +14,8 @@ Aplicación educativa en **Python + Streamlit** para enseñar **Aprendizaje por 
    ```bash
    pip install -r requirements.txt
    ```
+2.1 pip install streamlit
+
 3. Ejecuta la app:
    ```bash
    streamlit run streamlit_app.py
