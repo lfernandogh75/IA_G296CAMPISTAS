@@ -1,0 +1,35 @@
+{
+    "intents": [
+      {
+        "tag": "saludo",
+        "patterns": ["hola", "buenos dias", "buenas tardes", "buenas", "hey", "que tal", "holi"],
+        "responses": ["¡Hola! ¿En qué puedo ayudarte?", "¡Hola! ¿Cómo te apoyo hoy?", "¡Hey! ¿Qué necesitas?"]
+      },
+      {
+        "tag": "despedida",
+        "patterns": ["adios", "hasta luego", "nos vemos", "chao", "me voy"],
+        "responses": ["¡Hasta luego! 👋", "¡Chao! Fue un gusto ayudarte.", "¡Nos vemos! ¡Éxitos!"]
+      },
+      {
+        "tag": "agradecimiento",
+        "patterns": ["gracias", "muchas gracias", "mil gracias"],
+        "responses": ["¡Con gusto! 😊", "¡Para eso estoy!", "¡Me alegra ayudar!"]
+      },
+      {
+        "tag": "horario",
+        "patterns": ["cual es su horario", "a que horas abren", "horarios de atencion", "cuando atienden"],
+        "responses": ["Lun–Vie 8:00–18:00 .", "Atendemos de lunes a viernes de 8:00 a 18:00 ."]
+      },
+      {
+        "tag": "precio",
+        "patterns": ["cuanto cuesta", "precio", "tarifas", "cuanto vale", "costos", "planes de precio"],
+        "responses": ["Tenemos planes desde $19/mes. ¿Qué necesitas exactamente?", "¿Prefieres plan mensual o anual?"]
+      },
+      {
+        "tag": "soporte",
+        "patterns": ["necesito soporte", "tienen soporte", "ayuda tecnica", "soporte tecnico", "ticket de soporte"],
+        "responses": ["Escríbenos a soporte@ejemplo.com y te ayudamos.", "Abre un ticket en soporte@ejemplo.com"]
+      }
+    ]
+  }
+  
